@@ -1,8 +1,8 @@
 void booksList()
 {
     system("cls");
-    printf("<== Available Books ==>\n\n");
-    printf("%-10s %-30s %-20s %s\n\n", "Book id", "Book Name", "Author", "Date");
+    printf("*** AVAILABLE BOOKS ***\n\n");
+    printf("%-10s %-30s %-20s %s\n\n", "Book ID", "Book Name", "Author", "Date");
 
     fp = fopen("books.txt", "rb");
 

@@ -1,15 +1,21 @@
 # depslib dependency file v1.0
-1671982271 source:c:\users\user\desktop\project\library-management\codeblocks\libman\main.c
+1671984826 source:c:\users\user\desktop\project\library-management\codeblocks\libman\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"splash.h"
 	"addBook.h"
+	"bookList.h"
+	"logIn.h"
 
-1671600493 c:\users\user\desktop\project\library-management\codeblocks\libman\splash.h
+1671984058 c:\users\user\desktop\project\library-management\codeblocks\libman\splash.h
 
 1671472593 c:\users\user\desktop\project\library-management\codeblocks\libman\main.h
 	"splash.h"
 
-1671982239 c:\users\user\desktop\project\library-management\codeblocks\libman\addbook.h
+1671984933 c:\users\user\desktop\project\library-management\codeblocks\libman\addbook.h
+
+1671984826 c:\users\user\desktop\project\library-management\codeblocks\libman\booklist.h
+
+1671984377 c:\users\user\desktop\project\library-management\codeblocks\libman\login.h
 

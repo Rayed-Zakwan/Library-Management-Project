@@ -21,23 +21,24 @@ void addBook()
     char myDate[12];
     time_t t = time(NULL);
     struct tm tm = *localtime(&t);
-    printf(myDate, "%02d/%02d/%d", tm.tm_mon+1, tm.tm_year + 1900);
+    sprintf(myDate, "%02d/%02d/%d", tm.tm_mon+1, tm.tm_year + 1900);
     strcpy(b.date, myDate);
 
     fp = fopen("books.txt", "ab");
 
-    printf("Enter Book ID: ");
+    printf("\n*** ADD BOOK ***\n\n");
+    printf("Enter Book ID     : ");
     scanf("%d", &b.id);
 
-    printf("Enter Book Name: ");
+    printf("Enter Book Name   : ");
     fflush(stdin);
     gets(b.bookName);
 
-    printf("Enter Author Name: ");
+    printf("Enter Author Name : ");
     fflush(stdin);
     gets(b.authorName);
 
-    printf("Book Added Successfully!");
+    printf("\nBook Added Successfully!\n");
 
     fwrite(&b, sizeof(b), 1, fp);
     fclose(fp);

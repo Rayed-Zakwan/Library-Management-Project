@@ -4,24 +4,28 @@
 #include "splash.h"
 #include "addBook.h"
 #include "bookList.h"
+#include "logIn.h"
 
 int main(void)
 {
     int ch;
 
     splash();
-    sleep(5);
+    sleep(1);
+    system("cls");
+
+    login();
 
     while(1)
     {
         system("cls");
         printf("LIBRARY MANAGEMENT SYSTEM\n\n");
-        printf("1.Add Book\n");
-        printf("2.Books List\n");
-        printf("3.Remove Book\n");
-        printf("4.Issue Book\n");
-        printf("5.Issued Book List\n");
-        printf("0.Exit\n\n");
+        printf("1. Add Book\n");
+        printf("2. Books List\n");
+        printf("3. Remove Book\n");
+        printf("4. Issue Book\n");
+        printf("5. Issued Book List\n\n");
+        printf("0. Exit\n\n");
         printf("Enter your choice: ");
         scanf("%d", &ch);
 
@@ -54,7 +58,7 @@ int main(void)
             printf("Invalid Choice...\n\n");
 
         }
-        printf("Press Any Key To Continue...");
+        printf("\nPress ANY key to continue...");
         getch();
     }
 
