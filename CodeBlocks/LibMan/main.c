@@ -1,40 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "splash.h"
+#include "addBook.h"
+#include "bookList.h"
 
 int main(void)
 {
+    int ch;
+
     splash();
     sleep(5);
-
-    int ch;
 
     while(1)
     {
         system("cls");
-        printf("1. Add Book         : \n");
-        printf("2. Book List        : \n");
-        printf("3. Remove Book      : \n");
-        printf("4. Issue Book       : \n");
-        printf("5. Issue Book List  : \n\n");
-        printf("0. Exit \n\n");
+        printf("LIBRARY MANAGEMENT SYSTEM\n\n");
+        printf("1.Add Book\n");
+        printf("2.Books List\n");
+        printf("3.Remove Book\n");
+        printf("4.Issue Book\n");
+        printf("5.Issued Book List\n");
+        printf("0.Exit\n\n");
         printf("Enter your choice: ");
         scanf("%d", &ch);
 
-        switch (ch)
+        switch(ch)
         {
         case 0:
             exit(0);
 
         case 1:
-           addBook();
+            addBook();
             break;
 
         case 2:
-            bookList();
+            booksList();
             break;
 
-        case 3:
+        /*case 3:
             del();
             break;
 
@@ -44,14 +48,15 @@ int main(void)
 
         case 5:
             issueList();
-            break;
+            break;*/
 
         default:
-            printf("Invalid Choice! \n\n");
+            printf("Invalid Choice...\n\n");
+
         }
-        printf("Press any key to continue...");
-        getchar();
+        printf("Press Any Key To Continue...");
+        getch();
     }
 
-
+    return 0;
 }
