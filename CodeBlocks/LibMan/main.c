@@ -5,6 +5,9 @@
 #include "addBook.h"
 #include "bookList.h"
 #include "logIn.h"
+#include "del.h"
+#include "issueBook.h"
+#include "issueList.h"
 
 int main(void)
 {
@@ -42,7 +45,7 @@ int main(void)
             booksList();
             break;
 
-        /*case 3:
+        case 3:
             del();
             break;
 
@@ -52,7 +55,7 @@ int main(void)
 
         case 5:
             issueList();
-            break;*/
+            break;
 
         default:
             printf("Invalid Choice...\n\n");

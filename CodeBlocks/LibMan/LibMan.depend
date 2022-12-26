@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1671984826 source:c:\users\user\desktop\project\library-management\codeblocks\libman\main.c
+1672063507 source:c:\users\user\desktop\project\library-management\codeblocks\libman\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -7,6 +7,9 @@
 	"addBook.h"
 	"bookList.h"
 	"logIn.h"
+	"del.h"
+	"issueBook.h"
+	"issueList.h"
 
 1671984058 c:\users\user\desktop\project\library-management\codeblocks\libman\splash.h
 
@@ -18,4 +21,10 @@
 1671984826 c:\users\user\desktop\project\library-management\codeblocks\libman\booklist.h
 
 1671984377 c:\users\user\desktop\project\library-management\codeblocks\libman\login.h
+
+1672063011 c:\users\user\desktop\project\library-management\codeblocks\libman\del.h
+
+1672063028 c:\users\user\desktop\project\library-management\codeblocks\libman\issuebook.h
+
+1672063468 c:\users\user\desktop\project\library-management\codeblocks\libman\issuelist.h
 
