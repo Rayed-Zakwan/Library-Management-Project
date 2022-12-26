@@ -32,6 +32,11 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="addBook.h" />
+		<Unit filename="bookList.h" />
+		<Unit filename="del.h" />
+		<Unit filename="issueBook.h" />
+		<Unit filename="issueList.h" />
+		<Unit filename="logIn.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
