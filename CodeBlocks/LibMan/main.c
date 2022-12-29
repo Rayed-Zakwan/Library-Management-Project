@@ -59,11 +59,9 @@ int main(void)
 
         default:
             printf("Invalid Choice...\n\n");
-
         }
         printf("\nPress ANY key to continue...");
         getch();
     }
-
     return 0;
 }
