@@ -1,6 +1,7 @@
 void del()
 {
     int id, f=0;
+
     system("cls");
     printf("<== Remove Books ==>\n\n");
     printf("Enter Book id to remove: ");
@@ -23,7 +24,7 @@ void del()
             }
         }
 
-    if(f==1)
+    if(f == 1)
         {
         printf("\n\nDeleted Successfully.");
         }
