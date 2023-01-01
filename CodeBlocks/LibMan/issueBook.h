@@ -17,18 +17,15 @@ void issueBook()
     //Check if we have book of given id
     fp = fopen("books.txt", "rb");
 
-    while(fread(&b, sizeof(b), 1, fp) == 1)
-        {
-        if(b.id == s.id)
-        {
+    while(fread(&b, sizeof(b), 1, fp) == 1){
+        if(b.id == s.id){
             strcpy(s.bookName, b.bookName);
             f = 1;
             break;
         }
     }
 
-    if(f == 0)
-        {
+    if(f == 0){
         printf("No book found with this id\n");
         printf("Please try again...\n\n");
         return;

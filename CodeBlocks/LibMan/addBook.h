@@ -1,18 +1,16 @@
-struct books
-{
+struct books{
     int id;
-    char bookName[100];
-    char authorName[100];
+    char bookName[50];
+    char authorName[50];
     char date[12];
 }b;
 
-struct student
-{
+struct student{
     int id;
     char sName[50];
     char sClass[50];
     int sRoll;
-    char bookName[100];
+    char bookName[50];
     char date[12];
 }s;
 
@@ -43,6 +41,5 @@ void addBook()
     printf("\nBook Added Successfully!\n");
 
     fwrite(&b, sizeof(b), 1, fp);
-
     fclose(fp);
 }
